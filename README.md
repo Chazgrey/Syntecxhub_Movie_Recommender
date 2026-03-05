@@ -1,16 +1,33 @@
-🎬 Movie Recommendation SystemA content-based movie recommender built with Python, scikit-learn, and Streamlit. It uses TF-IDF vectorization and cosine similarity to recommend movies based on their overview, genres, keywords, cast, and director.
+# 🎬 Movie Recommendation System
+A content-based movie recommender built with Python, scikit-learn, and Streamlit. It uses TF-IDF vectorization and cosine similarity to recommend movies based on their overview, genres, keywords, cast, and director.
 
-📂 Project Structuremovie-recommender/ │ ├── app.py                  # Streamlit webapp ├── movies.pkl              # Saved dataframe with metadata ├── tfidf_vectorizer.pkl    # Saved TF-IDF model ├── cosine_similarity.pkl   # Saved similarity matrix ├── requirements.txt        # Dependencies └── README.md               # Project documentation
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white" alt="Streamlit">
 
-⚙️ Installation
+# 📂 Project Structure
 
-Clone the repository:git clone https://github.com/YourUsername/movie-recommender.git cd movie-recommender
+- MR_EDA.ipynb
+- README.md
+- app.py
+- movies.pkl
+- requirements.txt
+- tfidf_vectorizer.pkl
+- tmdb_5000_credits.csv
+- tmdb_5000_movies.csv  
 
-Install dependencies:pip install -r requirements.txt
 
-▶️ Running the AppRun the Streamlit app locally:streamlit run app.pyOpen the local URL (usually http://localhost:8501) in your browser.
+# ⚙️ Installation
 
-🎛️ Features
+Clone the repository:```git clone https://github.com/Chazgrey/Syntecxhub_Movie_Recommender.git
+cd Syntecxhub_Movie_Recommender```
+
+Install dependencies:``` bash pip install -r requirements.txt```
+
+# ▶️ Running the App
+Run the Streamlit app locally: streamlit run app.py
+
+Open the local URL in your browser.
+
+# 🎛️ Features
 
 Content-based filtering using TF-IDF + Cosine Similarity.
 
@@ -20,20 +37,24 @@ Adjustable slider for number of recommendations.
 
 Displays similarity score, rating, and popularity.
 
-Fetches movie posters dynamically using the TMDB API.
 
-🖼️ Movie PostersThis app integrates with the TMDB API to fetch movie posters.
+# 📦 Requirements
+streamlit pandas scikit-learn joblib requests
 
-Get your API key from TMDB.
+# 🚀 Deployment 
+You can deploy this app easily on:
 
-Add it to app.py:API_KEY = "YOUR_TMDB_API_KEY"
+[Streamlit Cloud](https://streamlit.io/cloud)
 
-📦 Requirementsstreamlit pandas scikit-learn joblib requests
+# 🎯 Demo
 
-🚀 DeploymentYou can deploy this app easily on:
+Try the live app here:  
+→ **[Movie Recommendation System](https://syntecxappmovierecommender-iqqm6dnfhw9hakmh7chprg.streamlit.app/)**
 
-Streamlit Cloud → streamlit.io/cloud
+# 🛠️ Tech Stack
 
-Hugging Face Spaces → huggingface.co/spaces
-
-📸 Screenshots(Add screenshots of your app running locally with recommendations and posters)
+- **Python** 3.12+
+- **scikit-learn** — model training & pipeline
+- **joblib** — model serialization
+- **Streamlit** — interactive web app
+- **pandas** / **numpy**
